@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function Header(){return <header className="header"><div className="container nav"><Link href="/" className="logo">Plume <span>Libre</span></Link><nav className="navlinks"><Link href="/decouvrir">Découvrir</Link><Link href="/publier">Publier</Link><Link href="/dashboard">Mon espace</Link><Link href="/connexion" className="btn btn-primary">Connexion</Link></nav></div></header>}

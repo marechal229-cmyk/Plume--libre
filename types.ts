@@ -1,0 +1,1 @@
+export type Story={id:string;author_id:string|null;title:string;genre:string|null;paragraphs:string[];words:number|null;status:string;rating_average:number;ratings_count:number;views_count:number;created_at:string|null;updated_at:string};

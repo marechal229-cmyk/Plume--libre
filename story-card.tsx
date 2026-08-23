@@ -1,0 +1,2 @@
+import Link from "next/link";
+export function StoryCard({story}:any){const n=Math.round(story.rating_average||0);return <article className="card"><span className="badge">{story.genre||"Sans genre"}</span><div className="story-title">{story.title}</div><div className="stars">{"★".repeat(n)}<span className="muted">{"★".repeat(5-n)}</span></div><p className="muted">{story.ratings_count||0} note(s) · {story.views_count||0} lecture(s)</p><Link className="btn btn-secondary" href={`/oeuvre/${story.id}`}>Lire l'œuvre</Link></article>}

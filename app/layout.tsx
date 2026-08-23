@@ -1,9 +1,11 @@
+
 import "./globals.css";
+import Header from "@/components/Header";
 
 export const metadata = {
   title: "Plume Libre",
   description:
-    "Plateforme de publication et de lecture pour auteurs indépendants.",
+    "Plateforme gratuite de publication et de lecture pour auteurs indépendants.",
 };
 
 export default function RootLayout({
@@ -13,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
